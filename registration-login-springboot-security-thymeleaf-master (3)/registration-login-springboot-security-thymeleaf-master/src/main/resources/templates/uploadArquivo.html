@@ -1,0 +1,15 @@
+<!-- Página para fazer upload de arquivos -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de Arquivos</title>
+</head>
+<body>
+    <h1>Fazer Upload de Arquivos</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit" href="/descricao">ENVIAR</button>
+    </form>
+</body>
+</html>
