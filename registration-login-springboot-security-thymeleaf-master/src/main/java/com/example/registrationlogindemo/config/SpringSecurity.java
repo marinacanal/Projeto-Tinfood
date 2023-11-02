@@ -30,15 +30,17 @@ public class SpringSecurity {
                 .authorizeHttpRequests((authorize) ->
                         authorize.requestMatchers("/css/**", "/img/**", "/script/**").permitAll()
                                 .requestMatchers("/registrar/**").permitAll()
-                                .requestMatchers("/descricao").permitAll()
                                 .requestMatchers("/descricao/**").permitAll()
-                                .requestMatchers("/preferencia").permitAll()
                                 .requestMatchers("/preferencia/**").permitAll()
                                 .requestMatchers("/match/**").permitAll()
+                                .requestMatchers("/matches/**").permitAll()
                                 .requestMatchers("/editar/**").permitAll()
                                 .requestMatchers("/categoria/**").permitAll()
                                 .requestMatchers("/").permitAll()
                                 .requestMatchers("/upload/**").permitAll()
+                                .requestMatchers("/download/**").permitAll()
+                                .requestMatchers("/uploadArquivo/**").permitAll()
+                                .requestMatchers("/downloadArquivo/**").permitAll()
                                 .requestMatchers("/chat").permitAll()
                                 .requestMatchers("/users").permitAll()
                                 .requestMatchers("/api/**").permitAll()
@@ -48,7 +50,7 @@ public class SpringSecurity {
                         .loginPage("/login")
                         .loginProcessingUrl("/login")
                         .permitAll()
-                        .defaultSuccessUrl("/upload/perfil")
+                        .defaultSuccessUrl("/descricao")
         ).logout(
                 logout -> logout
                         .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))

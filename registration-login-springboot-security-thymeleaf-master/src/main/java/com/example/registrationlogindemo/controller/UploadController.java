@@ -49,8 +49,6 @@ public class UploadController {
         UsuarioLogadoController.getUsuarioLogado().setFoto_perfil(uploadPath + file.getOriginalFilename());
         userRepository.save(UsuarioLogadoController.getUsuarioLogado());
 
-        return "redirect:/descricao";
+        return "redirect:/downloadArquivo";
     }
-
-
 }

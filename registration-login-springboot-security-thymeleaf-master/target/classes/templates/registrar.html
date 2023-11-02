@@ -9,6 +9,10 @@
 <body>
   <div class="container">
     <h1>Cadastrar</h1>
+    <div class="card">
+      <div th:if="${param.error}">
+          <div class="alert alert-info">Cadastro concluído!</div>
+      </div>
     <form onsubmit="event.preventDefault();">
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required>

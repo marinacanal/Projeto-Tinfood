@@ -35,7 +35,7 @@ public class UserRestController {
     }
 
     // Obter um usuário por ID
-    @GetMapping("/{id}")
+    @GetMapping("/listar/{id}")
     public Optional<User> buscarUser(@PathVariable Long id) {
         return userRepository.findById(id);
     }
@@ -66,7 +66,7 @@ public class UserRestController {
 
     }
 
-    // Excluir um produto
+    // Excluir um usuário
     @DeleteMapping("/deletar/{id}")
     public void excluirUser(@PathVariable Long id) {
         userRepository.deleteById(id);

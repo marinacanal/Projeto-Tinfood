@@ -1,30 +1,31 @@
 //Script JavaScript para interagir com a API
-function listaUser() {
-    fetch(`/api/${id}`)
+
+function listaUser(id) {
+    fetch(`/api/listar/${id}`)
         .then(response => response.json())
         .then(data => {
             const listaUser = document.getElementById('listaUser');
             listaUser.innerHTML = '';
 
-            data.forEach(user => {
+            data.forEach(users => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                <td>${user.nome}</td>
-                <td>${user.email}</td>
-                <td>${user.password}</td>
-                <td>${user.telefone}</td>
-                <td>${user.genero}</td>
-                <td>${user.foto_perfil}</td>
-                <td>${user.descricao}</td>
-                <td>${user.data_nascimento}</td>
-                <td>${user.preferencia1}</td>
-                <td>${user.preferencia2}</td>
-                <td>${user.preferencia3}</td>
-                <td>${user.categoria}</td>
+                <td>${users.nome}</td>
+                <td>${users.email}</td>
+                <td>${users.password}</td>
+                <td>${users.telefone}</td>
+                <td>${users.genero}</td>
+                <td>${users.foto_perfil}</td>
+                <td>${users.descricao}</td>
+                <td>${users.data_nascimento}</td>
+                <td>${users.preferencia1}</td>
+                <td>${users.preferencia2}</td>
+                <td>${users.preferencia3}</td>
+                <td>${users.categoria}</td>
                 <td>
                 <!-- Botão de edição com formulário oculto -->
-                <button class="botao-editar flat-button" data-id="${user.id}">Editar</button>
-                <form class="form-editar oculto" data-id="${user.id}">
+                <button class="botao-editar flat-button" data-id="${users.id}">Editar</button>
+                <form class="form-editar oculto" data-id="${users.id}">
                     <div class="form-group">
                         <label for="editarNome">Novo Nome:</label>
                         <input type="text" id="editarNome" class="form-input" required>
@@ -71,10 +72,10 @@ function listaUser() {
                     </div>
                     <button type="button" class="botao-salvar flat-button">Salvar</button>
                 </form>                
-                    <button class="botao-excluir flat-button" data-id="${user.id}">Excluir</button>
+                    <button class="botao-excluir flat-button" data-id="${users.id}">Excluir</button>
                 </td>
             `;
-            listaUser.appendChild(tr);
+                listaUser.appendChild(tr);
             });
 
             // Adicionar eventos para os botões editar e excluir
@@ -144,3 +145,5 @@ function listaUser() {
             console.error('Erro ao listar produtos:', error);
         });
 }
+
+listaUser();

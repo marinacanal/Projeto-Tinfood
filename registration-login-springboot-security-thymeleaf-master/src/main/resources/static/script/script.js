@@ -29,6 +29,7 @@ document.getElementById('criarUsuario').addEventListener('click', function () {
             genero: genero
         })        
     })
+    
         paginaDeLogin() 
    
 }); 

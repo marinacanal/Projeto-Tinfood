@@ -14,7 +14,7 @@
     <h2>Adicione uma descrição ao seu perfil</h2>
     <form method="POST" action="/descricao" enctype="multipart/form-data">
         <textarea name="descricao" id="descricao" data-id="${descricao}"></textarea>
-        <button type="button" class="botao-salvar" id="botao-salvar">Salvar</button>
+        <button type="button" class="botao-salvar" id="botao-salvar" data-id="${users.id}">Salvar</button>
     </form>
     </div>
     <script src="/script/scriptDes.js"></script>
