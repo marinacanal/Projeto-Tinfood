@@ -33,7 +33,7 @@ public class SiteController {
         return "chat";
     }
 
-    @GetMapping("/upload/perfil")
+    @GetMapping("/uploadArquivo")
     public String upload() {
         return "uploadArquivo";
     }

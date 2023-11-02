@@ -19,5 +19,5 @@ document.getElementById('botao-salvar').addEventListener('click', function () {
     });
 
 function paginaPref() {
-    location.replace("/editar")
+    location.replace("/uploadArquivo")
 }

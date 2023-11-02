@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matche</title>
+    <title>Matches</title>
 </head>
 <body>
+    <li th:each="file : ${fileList}">
+        <img th:src="@{/download/{fileName}(fileName=${file})}" th:alt="${file}"></img>
+    </li>
     <button type="button" class="botao-gostei" id="botao-gostei" onClick="clickTeclado(this.value);" value="gostei">Gostei</button>
     <button type="button" class="botao-nao-gostei" id="botao-nao-gostei" onClick="clickTeclado(this.value);" value="nao gostei">Não gostei</button>
 
