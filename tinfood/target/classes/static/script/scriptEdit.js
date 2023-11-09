@@ -72,7 +72,7 @@ function listaUser() {
                     </div>
                     <button type="button" class="botao-salvar flat-button">Salvar</button>
                 </form>                
-                    <button class="botao-excluir flat-button" data-id="${users.id}">Excluir</button>
+                    <button class="botao-excluir flat-button" data-id="${user.id}">Excluir</button>
                 </td>
             `;
                 listaUser.appendChild(tr);

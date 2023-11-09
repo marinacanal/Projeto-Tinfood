@@ -11,6 +11,9 @@ function listarUsers() {
                 div.innerHTML = `
                 <h2>${user.name}</h2>
                 <h3>${user.descricao}</h3>
+                <h3>${user.preferencia1}</h3>
+                <h3>${user.preferencia2}</h3>
+                <h3>${user.preferencia3}</h3>
                 <img src="${user.foto_perfil}">
                 <br>
                 <button>Gostei</button>
