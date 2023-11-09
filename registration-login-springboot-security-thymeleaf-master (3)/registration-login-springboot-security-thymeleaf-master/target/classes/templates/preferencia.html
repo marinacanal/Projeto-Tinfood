@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SHABLAU</h1>
+    <form method="POST" action="/preferencia" enctype="multipart/form-data">
+        <input type="text" name="preferencia1" id="preferencia1"/>
+        <input type="text" name="preferencia2" id="preferencia2"/>
+        <input type="text" name="preferencia3" id="preferencia3"/>
+        <button type="button" class="botao-salvar" id="botao-salvar" data-id="${user.id}">Salvar</button>
+    </form>
+    <script src="/script/scriptPref.js"></script>
+</body>
+</html>

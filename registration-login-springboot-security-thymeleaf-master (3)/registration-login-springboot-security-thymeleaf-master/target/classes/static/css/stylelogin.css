@@ -1,0 +1,175 @@
+<<<<<<<< HEAD:registration-login-springboot-security-thymeleaf-master (3)/registration-login-springboot-security-thymeleaf-master/src/main/resources/static/css/stylePreferencias.css
+*{font-family: 'Public Sans', sans-serif}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,9,0.5)), url('https://images.pexels.com/photos/2956952/pexels-photo-2956952.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: linear-gradient(-45deg, #ffffff, #ffffff, #ffffff);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+ a
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+input,
+  select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px  solid rgba(209, 57, 70, 0.644);
+    border-radius: 6px;
+  }
+  
+input[type="radio"]{
+    width:50%;
+    float:left;
+}
+
+form p{
+    width:20%;
+    height:auto;
+    float:left;
+}
+  
+  button {
+    margin-top: 5%;
+    margin: 0 auto;
+    background: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 55%;
+    margin-bottom: 2%;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  a {
+    color: rgba(209, 57, 70, 0.644);
+  }
+  
+  .container-registrar-se {
+    text-align: left;
+  }
+  
+  label, textarea {
+    display: block;
+  }
+  
+  input {
+    margin: 20px 0;
+    width: 350px;
+    height: 70px;
+   
+  }
+========
+*{font-family: 'Public Sans', sans-serif}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,9,0.5)), url('https://images.pexels.com/photos/2956952/pexels-photo-2956952.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: linear-gradient(-45deg, #ffffff, #ffffff, #ffffff);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+input,
+  select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px  solid rgba(209, 57, 70, 0.644);
+    border-radius: 6px;
+  }
+  
+input[type="radio"]{
+    width:50%;
+    float:left;
+}
+
+input#senha {
+  margin-bottom: 6%;
+}
+
+form p{
+    width:20%;
+    height:auto;
+    float:left;
+}
+  
+  button {
+    margin-top: 5%;
+    margin: 0 auto;
+    background: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 55%;
+    margin-bottom: 2%;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  a {
+    color: rgba(209, 57, 70, 0.644);
+  }
+  
+  .container-registrar-se {
+    text-align: left;
+  }
+>>>>>>>> f37bb475635418cda0b692a6fafa54d7437f1511:registration-login-springboot-security-thymeleaf-master (3)/registration-login-springboot-security-thymeleaf-master/target/classes/static/css/stylelogin.css

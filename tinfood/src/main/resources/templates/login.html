@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/stylelogin.css">
+  <title>FormulárioLogin</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <div th:if="${param.error}">
+      <div class="alert alert-danger" style="color: rgba(209, 57, 70, 0.644);">Email ou senha inválidos.</div>
+    </div>
+    <div th:if="${param.logout}">
+      <div class="alert alert-success">Você foi desconectado.</div>
+    </div>
+    <br>
+    <form method="post" th:action="@{/login}" class="form-horizontal" role="form">
+      <label for="email">Email:</label>
+      <input type="email" id="username" name="username" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="container-registrar-se">
+      <p>Ainda não é cadastrado? <a th:href="@{/registrar}">Cadastre-se aqui</a></p>
+    </div>
+  </div>
+</body>
+</html>

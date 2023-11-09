@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar usuário</title>
+</head>
+
+<body>
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Data de Nascimento</th>
+                <th>Telefone</th>
+                <th>Gênero</th>
+                <th>Foto de Perfil</th>
+                <th>Descrição</th>
+                <th>Preferência 1</th>
+                <th>Preferência 2</th>
+                <th>Preferência 3</th>
+                <th>Categoria</th>
+                <th>Ações</th> <!-- Coluna para ações -->
+            </tr>
+        </thead>
+        <tbody id="listaUser" data-id="${user.id}" ></tbody>
+    </table>
+
+    <!-- Script JavaScript para interagir com a API -->
+    <script src="/script/scriptEdit.js"></script>
+</body>
+
+</html>
