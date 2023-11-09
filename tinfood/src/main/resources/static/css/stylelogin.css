@@ -20,7 +20,7 @@ body {
   
   h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
   
   form {
@@ -30,24 +30,15 @@ body {
   
   label {
     font-weight: bold;
+    padding-bottom: 10px;
   }
   
-input,
-  select {
-    padding: 12px;
-    margin-bottom: 15px;
+input {
+    padding: 13px;
+    margin-bottom: 25px;
     border: 1px  solid rgba(209, 57, 70, 0.644);
     border-radius: 6px;
   }
-  
-input[type="radio"]{
-    width:50%;
-    float:left;
-}
-
-input#senha {
-  margin-bottom: 6%;
-}
 
 form p{
     width:20%;
@@ -56,8 +47,7 @@ form p{
 }
   
   button {
-    margin-top: 5%;
-    margin: 0 auto;
+    margin: 5px auto 9px auto;
     background: black;
     color: white;
     padding: 15px;
@@ -65,7 +55,6 @@ form p{
     border-radius: 20px;
     cursor: pointer;
     width: 55%;
-    margin-bottom: 2%;
   }
   
   button:hover {
