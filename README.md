@@ -38,45 +38,45 @@ Tela para excluir a conta: Lucas.
 
 ### Design Página Inicial
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/ba18ce7d-61e9-4495-8648-0989818e0488)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/5043ea21-a3e0-48ff-8302-dfa0e7925576)
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/9eff7613-73c7-4a6f-93eb-dba6620e6598)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/944b82ff-3261-439a-9552-fba63adb6939)
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/23ee8f8a-7493-42f7-b197-ca36c0205954)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/cee07d65-c724-468f-b001-85445ab9e8ea)
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/17ec99dc-eaf7-477f-a678-4fe0f5e337d0)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/14eefbb1-bfec-4180-827b-87b1edfc6f7a)
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/2a1079eb-37a5-45bb-9939-8b7bc664123a)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/03c09b4d-761d-443d-9cf5-72772bf0d6de)
 
 
 
 ### Tela de Cadastro 
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/6cd29ffe-96fd-4780-9082-67da0b5d418c)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/e8f75760-28ca-49b0-8ca6-760acd7803e0)
 
 
 
 ### Tela de Login 
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/7c230860-0ac9-4aa1-a481-f51531e678cb)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/a08946aa-e138-40c9-83c8-9dd60afe5f01)
 
 
 
 ### Tela de Descrição 
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/7a01cdb5-1bf1-4662-bebc-3ef3ac4bccb4)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/799b85f9-5aa7-4102-9cd4-eeb2c10f5475)
 
 
 
 ### Tela de Preferências
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/f6d8213b-e497-49c7-a426-a746278b027f)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/7942b3ca-65c9-497b-b29e-a23171242049)
 
 
 
 ### Tela de Foto de Perfil
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/4443c9ee-1303-468d-928b-3db591ae2cf1)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/957788c0-a1b3-4720-93a1-ad75aaca359d)
 
 
 
@@ -88,13 +88,13 @@ Tela para excluir a conta: Lucas.
 
 ### Tela de Editar Perfil
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/baf83fef-4369-486c-b803-a5918daf854c)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/8cf6c1bc-1ae8-41c4-b4cf-b73dde4ad120)
 
 
 
 ### Tela de Editar a Foto de Perfil
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/3ff1a590-59a2-4393-bc1f-6216c6c32986)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/7df53721-ea98-4168-92e3-405e81d4db7c)
 
 
 
