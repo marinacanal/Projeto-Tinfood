@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylePref.css">
+    <title>Preferências</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Adicione alguns lugares que você gostaria de ir ou visitar!</h2>
+
+        <form method="POST" action="/preferencia" enctype="multipart/form-data">
+            <label for="nome">Lugar 1:</label>
+            <input type="text" name="preferencia1" id="preferencia1" maxlength="47" />
+
+            <label for="nome">Lugar 2:</label>
+            <input type="text" name="preferencia2" id="preferencia2" maxlength="47" />
+
+            <label for="nome">Lugar 3:</label>
+            <input type="text" name="preferencia3" id="preferencia3" maxlength="47" />
+
+            <button type="button" class="botao-salvar" id="botao-salvar" data-id="${user.id}">Salvar</button>
+        </form>
+    </div>
+    <script src="/script/scriptPref.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,513 @@
+* {
+  font-family: 'Public Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: white;
+}
+
+.carousel-inner {
+  z-index: 1;
+}
+
+/* caso queira mudar a versão do bootstrap em conflito deletar ou deixar essa opção */
+.carousel-item {
+  float: none;
+  transition: 0s !important;
+}
+
+nav a {
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0 15px;
+  transition: 0.5s ease-out;
+  font-size: 16px;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+#hero-carousel .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.50);
+}
+
+.banner h5 {
+  width: 100%;
+  font-size: 400%;
+  color: white;
+  font-weight: bolder;
+}
+
+.banner p {
+  width: 100%;
+  font-size: 175%;
+  color: white;
+}
+
+.sobre {
+  width: 100%;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 100px;
+  z-index: 1;
+}
+
+.itens-sobre {
+  width: 50%;
+  float: right;
+  padding-left: 0%;
+  padding-top: 2%;
+}
+
+.itens-sobre h1 {
+  font-size: 350%;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.depoimentos h1 {
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.itens-sobre p {
+  font-size: 160%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.img-sobre {
+  width: 40%;
+  height: 100%;
+  float: left;
+  display: flex;
+  text-align: center;
+}
+
+.img-sobre img {
+  width: 70%;
+  margin: auto;
+  border-radius: 28px;
+  z-index: 1000;
+}
+
+.como-funciona {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  color: black;
+}
+
+.funciona-fundo {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(0.50);
+  z-index: -1;
+  object-fit: cover;
+}
+
+.titulo-funciona {
+  font-size: 350%;
+  font-weight: bold;
+  margin-bottom: 5%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  margin-left: 50%;
+}
+
+.circle-fill {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.como-funciona p {
+  color: #fff;
+  font-size: 130%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.servicos h3 {
+  text-align: center;
+  margin-top: 11%;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+
+.carrosel-dep {
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 650px;
+  background-color: white;
+}
+
+.carrosel-dep img {
+  background-image: url(https://images.pexels.com/photos/1965993/pexels-photo-1965993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: -20px;
+  display: flex;
+  border: 3px solid  rgb(167, 41, 52);
+}
+
+.carrosel-dep h2 {
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.carrosel-dep p {
+  font-size: 20px;
+}
+
+.contato-social {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/6150432/pexels-photo-6150432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  padding: 50px 0;
+  padding-left: 9%;
+  color: white;
+}
+
+.contato-social label {
+  padding: 10px 0 5px 0;
+  font-size: 20px;
+}
+
+.contato-social input,
+.contato-social textarea {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid white;
+  border-radius: 6px;
+  background: transparent;
+  color: white;
+}
+
+.contato-social p {
+  font-size: 22px;
+}
+
+.redes{
+  padding-left: 7%;
+}
+
+.redes p{
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+.imgs-redes {
+  width: 100%;
+}
+
+.imgs-redes img {
+  width: 75px;
+  height: 75px;
+  padding: 7px;
+  float: left;
+  filter: invert(100%);
+}
+
+.entrar{
+  width: 26%;
+}
+
+.enviar{
+  width: 35%;
+}
+
+.entrar, .enviar {
+  padding: 20px;
+  font-size: 1em;
+  margin-top: 1%;  
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.entrar, .enviar:hover {
+  transform: scale(1.05);
+  transition: transform 0.6s ease-in-out;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 3%;
+}
+
+
+@media screen and (max-width: 1192px) {
+
+  .itens-sobre {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .img-sobre {
+    float: center;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+    width: 75%;
+  }
+
+  .img-sobre img {
+    padding-bottom: 110px;
+  }
+
+  .sobre {
+    height: 1100px;
+  }
+
+  .servicos h3 {
+    font-size: 180%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  nav {
+    width: auto;
+    height: 40px;
+  }
+
+  nav a {
+    font-size: 10px;
+    margin: -10px;
+    line-height: 60px;
+    display: inline-block;
+  }
+
+  .servicos h3 {
+    font-size: 120%;
+  }
+
+  .titulo-funciona {
+    float: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+  }
+
+  .como-funciona p {
+    font-size: 100%;
+    margin: -10px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+
+  .img-sobre {
+    float: center;
+    height: auto;
+    width: 70%;
+    padding-left: 30%;
+    padding-top: 10%;
+  }
+
+  .img-sobre img {
+    padding-bottom: 110px;
+    width: 90%;
+  }
+
+  .sobre p {
+    font-size: 25px;
+  }
+
+  .sobre h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+
+  .sobre,
+  .carrosel-dep,
+  .contato-social {
+    padding: 37px 15px;
+  }
+
+  p,
+  .sobre p,
+  .contato-social p {
+    font-size: 16px;
+  }
+
+  .sobre h1,
+  .servicos h1,
+  .depoimentos h1,
+  .contato-social h1 {
+    font-size: 28px;
+  }
+
+  .contato-social button {
+    margin-bottom: 40px;
+  }
+
+  .servicos img {
+    margin-top: -10px;
+  }
+
+  .servicos h3 {
+    padding-top: 10px;
+    font-size: 90%;
+  }
+
+  .titulo-funciona {
+    font-size: 100%;
+    float: center;
+  }
+
+  .como-funciona p {
+    font-size: 60%;
+  }
+
+  .img-sobre {
+    float: center;
+    height: auto;
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+
+  .img-sobre img {
+    padding-bottom: 110px;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .img-sobre {
+    float: center;
+    height: auto;
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+
+  .img-sobre img {
+    padding-bottom: 110px;
+    width: 70%;
+  }
+
+  .sobre p {
+    font-size: 20px;
+  }
+
+  .sobre h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-height: 768px) {
+  #hero-carousel .carousel-caption {
+    top: 55%;
+  }
+
+
+}
+
+@media (max-height: 1192px) {
+  #hero-carousel .carousel-caption {
+    top: 55%;
+  }
+
+}
+
+@media (max-height: 1080px) {
+  .banner h5 {
+    font-size: 450%;
+  }
+
+  .banner p {
+    font-size: 175%
+  }
+
+}
