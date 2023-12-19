@@ -1,158 +1,141 @@
 //Script JavaScript para interagir com a API
+let usuarioLogado;
 
 function listaUser() {
-    fetch(`/api/listar/${id}`)
+    fetch('/api/listar/usuarioLogado')
         .then(response => response.json())
         .then(data => {
             const listaUser = document.getElementById('listaUser');
             listaUser.innerHTML = '';
 
-            data.forEach(user => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                <td>${user.nome}</td>
-                <td>${user.email}</td>
-                <td>${user.password}</td>
-                <td>${user.telefone}</td>
-                <td>${user.genero}</td>
-                <td>${user.foto_perfil}</td>
-                <td>${user.descricao}</td>
-                <td>${user.data_nascimento}</td>
-                <td>${user.preferencia1}</td>
-                <td>${user.preferencia2}</td>
-                <td>${user.preferencia3}</td>
-                <td>${user.foto_perfil}</td>
-                <td>
+            data.forEach(usuarioLogado => {
+                const div = document.createElement('div');
+                div.innerHTML = `<div class="container">
+                <div class="row">
+                <div class="col-6 esquerdo">
+                <form>
+                <div class="image">
+                <img src="${usuarioLogado.foto_perfil}" data-original-src="${usuarioLogado.foto_perfil}"  alt="" id="image-selected" height="150px" width="150px">
+                <br>
+                </div>
+                <br>
+                </form>
+                <br>
+                <input type="text" id="nome" placeholder="${usuarioLogado.name}" value="${usuarioLogado.name}"/>
+                <br>
+                <input type="text" id="descricao" name="descricao" placeholder="${usuarioLogado.descricao}" value="${usuarioLogado.descricao}"/>
+                <br>
+                <br>
+                <div class="preferencias">
+                <input type="text" id="pref1" placeholder="${usuarioLogado.preferencia1}" value="${usuarioLogado.preferencia1}"/>
+                <input type="tel" id="pref2" placeholder="${usuarioLogado.preferencia2}" value="${usuarioLogado.preferencia2}"/>
+                <input type="tel" id="pref3" placeholder="${usuarioLogado.preferencia3}" value="${usuarioLogado.preferencia3}"/>
+                </div>
+                </div>
+
+                <div class="col-6 direito">
+                <div class="comlabel">
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" placeholder="${usuarioLogado.email}" value="${usuarioLogado.email}"/>
+                <br>
+                <label for="email">Senha:</label>
+                <br>
+                <input type="password" id="password" placeholder="***"/>
+                <br>
+                <label for="email">Telefone:</label>
+                <br>
+                <input type="tel" id="tel" placeholder="${usuarioLogado.telefone}" value="${usuarioLogado.telefone}"/>
+                <br>
+                <label for="email">Data de Nascimento:</label>
+                <br>
+                <input placeholder="${usuarioLogado.data_nascimento}" value="${usuarioLogado.data_nascimento}" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="data_nascimento" id="data_nascimento">
+                <br>
+                <label for="email">Gênero:</label>
+                <br>
+                <select name="sexo" id="genero">
+                <option value="${usuarioLogado.genero}">${usuarioLogado.genero}</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Não Informado">Prefiro não informar</option>
+                </select>
+                </div>
+                <br>
                 <!-- Botão de edição com formulário oculto -->
-                <button class="botao-editar flat-button" data-id="${user.id}">Editar</button>
-                <form class="form-editar oculto" data-id="${user.id}">
-                    <div class="form-group">
-                        <label for="editarNome">Novo Nome:</label>
-                        <input type="text" id="editarNome" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarEmail">Novo Email:</label>
-                        <input type="email" id="editarEmail" class="form-input" step="0.01" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarSenha">Nova Senha:</label>
-                        <input type="password" id="editarSenha" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarTel">Novo Telfone:</label>
-                        <input type="tel" id="editarTel" class="form-input" step="0.01" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarData">Nova Data de Nascimento:</label>
-                        <input type="date" id="editarData" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarGenero">Novo Gênero:</label>
-                        <input type="email" id="editarGenero" class="form-input" step="0.01" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarFoto">Nova Foto:</label>
-                        <input type="text" id="editarFoto" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarDescricao">Novo Descrição:</label>
-                        <input type="email" id="editarDescricao" class="form-input" step="0.01" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarPref1">Nova Preferência 1:</label>
-                        <input type="text" id="editarPref1" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarPref2">Novo Preferência 2:</label>
-                        <input type="text" id="editarPref2" class="form-input" step="0.01" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editarPref3">Nova Preferência 3:</label>
-                        <input type="text" id="editarPref3" class="form-input" required>
-                    </div>
-                    <button type="button" class="botao-salvar flat-button">Salvar</button>
-                </form>                
-                    <button class="botao-excluir flat-button" data-id="${user.id}">Excluir</button>
-                </td>
+                <button type="submit" class="botao-editar flat-button" data-id="${usuarioLogado.id}">Salvar Alterações</button>
+                </div>
+                </div>
+                </div>
             `;
-                listaUser.appendChild(tr);
+                listaUser.appendChild(div);
             });
 
             // Adicionar eventos para os botões editar e excluir
             const botoesEditar = document.querySelectorAll('.botao-editar');
-            const botoesExcluir = document.querySelectorAll('.botao-excluir');
 
             botoesEditar.forEach(botao => {
                 botao.addEventListener('click', function () {
                     const id = botao.getAttribute('data-id');
 
-                    // Simplesmente exemplo: abrir um prompt para edição de nome
-                    const novoNome = prompt('Digite o novo nome para o produto:');
-                    const nome = prompt('Digite o novo nome para o produto:');
-                    const email = prompt('Digite o novo nome para o produto:');
-                    const dataN = prompt('Digite o novo nome para o produto:');
-                    const tel = prompt('Digite o novo nome para o produto:');
-                    const genero = prompt('Digite o novo nome para o produto:');
-                    const senha = prompt('Digite o novo nome para o produto:');
+                    const nomeInput = document.getElementById('nome'); // Obtém a referência ao campo de nome
+                    const fotoInput = document.getElementById('image-selected');
+                    const emailInput = document.getElementById('email'); // Obtém a referência ao campo de nome
+                    const dataInput = document.getElementById('data_nascimento'); // Obtém a referência ao campo de nome
+                    const telInput = document.getElementById('tel'); // Obtém a referência ao campo de nome
+                    const generoInput = document.getElementById('genero'); // Obtém a referência ao campo de nome
+                    const senhaInput = document.getElementById('password'); // Obtém a referência ao campo de nome
+                    const descInput = document.getElementById('descricao'); // Obtém a referência ao campo de nome
+                    const pref1Input = document.getElementById('pref1'); // Obtém a referência ao campo de nome
+                    const pref2Input = document.getElementById('pref2'); // Obtém a referência ao campo de nome
+                    const pref3Input = document.getElementById('pref3'); // Obtém a referência ao campo de nome
 
-
-                    if (novoNome !== null) { // Verificar se o usuário não cancelou
-                        // Enviar a solicitação PUT
-                        fetch(`/api/atualizar/${id}`, {
-                            method: 'PUT',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify({
-                                name: nome,
-                                email: email,
-                                password: senha,
-                                data_nascimento: dataN,
-                                telefone: tel,
-                                genero: genero
-                            })
+                    const novoNome = nomeInput.value;
+                    const novoEmail = emailInput.value;
+                    const novaFoto = fotoInput.getAttribute('data-original-src');                   
+                    const novoDataN = dataInput.value;
+                    const novoTel = telInput.value;
+                    const novoGen = generoInput.value;
+                    const novoSenha = senhaInput.value;
+                    const novoDesc = descInput.value;
+                    const novoPref1 = pref1Input.value;
+                    const novoPref2 = pref2Input.value;
+                    const novoPref3 = pref3Input.value;
+                        
+                    fetch(`/api/atualizar/${id}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: novoNome,
+                            email: novoEmail,
+                            foto_perfil: novaFoto,
+                            password: novoSenha,
+                            data_nascimento: novoDataN,
+                            telefone: novoTel,
+                            genero: novoGen,
+                            descricao: novoDesc,
+                            preferencia1: novoPref1,
+                            preferencia2: novoPref2,
+                            preferencia3: novoPref3
                         })
-                            .then(response => response.json())
-                            .then(data => {
-                                listaUser();
-                            })
-                            .catch(error => {
-                                console.error(`Erro ao atualizar o produto com ID ${id}:`, error);
-                            });
-                    }
-                });
-            });
-
-            botoesExcluir.forEach(botao => {
-                botao.addEventListener('click', function () {
-                    const id = botao.getAttribute('data-id');
-                    // Confirmar com o usuário antes de excluir
-                    const confirmacao = confirm('Tem certeza de que deseja excluir este produto?');
-
-                    if (confirmacao) {
-                        // Enviar a solicitação DELETE
-                        fetch(`/api/deletar/${id}`, {
-                            method: 'DELETE'
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            paginaMatch();
                         })
-                            .then(response => {
-                                if (response.ok) {
-                                    window.confirm(`Produto com ID ${id} excluído com sucesso.`);
-                                    listaUser();
-                                } else {
-                                    console.error(`Erro ao excluir o produto com ID ${id}`);
-                                }
-                            })
-                            .catch(error => {
-                                console.error(`Erro ao excluir o produto com ID ${id}:`, error);
-                            });
-                    }
-                });
+                        .catch(error => {
+                            console.error('Erro ao atualizar o user com ID ${id}:', error);
+                        });
+                })
             });
-
         })
         .catch(error => {
-            console.error('Erro ao listar produtos:', error);
+            console.error('Erro ao listar user:', error);
         });
 }
-
 listaUser();
+
+function paginaMatch() {
+    location.replace("/downloadArquivo")
+}

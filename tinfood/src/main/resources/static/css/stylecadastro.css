@@ -33,6 +33,7 @@ form {
 
 label {
   font-weight: bold;
+  padding-bottom: 7px;
 }
 
 input,
@@ -43,12 +44,6 @@ select {
   border-radius: 6px;
 }
 
-input[type="radio"] {
-  width: 50%;
-  float: left;
-
-}
-
 form p {
   width: 20%;
   height: auto;
@@ -56,7 +51,7 @@ form p {
 }
 
 button {
-  margin: 0 auto;
+  margin: 15px auto 5px auto;
   background: black;
   color: white;
   padding: 15px;
@@ -69,4 +64,14 @@ button {
 button:hover {
   transform: scale(1.05);
   transition: transform 0.6s ease-in-out;
+}
+
+a {
+  color: rgba(209, 57, 70, 0.644);
+}
+
+.container-logar p{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
 }

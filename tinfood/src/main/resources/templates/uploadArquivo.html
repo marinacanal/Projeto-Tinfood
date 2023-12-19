@@ -1,20 +1,23 @@
-<!-- Página para fazer upload de arquivos -->
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Upload de Arquivos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleUp.css">
+    <title>Foto de Perfil</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+    </style>
 </head>
 <body>
-    <h1>Fazer Upload de Arquivos</h1>
+  <div class="container">
+    <h2>Adicione uma foto de perfil</h2>
     <form method="POST" action="/upload" enctype="multipart/form-data">
-        <img src="" alt="" id="image-selected" height="150px" width="150px">
-        <br>
-        <input type="file" name="file" id="input-file"/>
-        <button type="submit">ENVIAR</button>
-    </form>
-
-    <script src="/script/scriptUpload.js"></script>
-
+    <img src="" class="foto" id="image-selected"/>    
+    <input type="file" name="file" id="input-file"/>
+    <button type="submit" href="/downloadArquivo">Adicionar</button> 
+  </form>
+  </div>
+  <script src="/script/scriptUpload.js"></script>
 </body>
 </html>

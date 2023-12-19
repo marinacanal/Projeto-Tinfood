@@ -54,9 +54,6 @@ public class User
     @Column(nullable=true)
     private String preferencia3;
 
-    @Column(nullable=true)
-    private String categoria;
-
     @ManyToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
     @JoinTable(
             name="users_roles",

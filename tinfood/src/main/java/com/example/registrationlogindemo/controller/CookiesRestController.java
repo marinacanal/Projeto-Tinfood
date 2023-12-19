@@ -23,7 +23,7 @@ public class CookiesRestController {
     public String dashboard(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
         if (cookies != null) {
-            for (Cookie cookie : cookies) { //percorre ate que exista o obj cookie
+            for (Cookie cookie : cookies) { // percorre ate que exista o obj cookie
                 if ("preference".equals(cookie.getName())) {
                     String preference = cookie.getValue();
                     return preference;

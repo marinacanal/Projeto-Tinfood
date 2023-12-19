@@ -33,27 +33,5 @@ public class FileListController {
         return "downloadArquivo"; // Nome do seu arquivo HTML que exibirá a lista de arquivos
     }
 
-    @GetMapping("/matches")
-    public String listFiles(Model model) {
-        // Substitua este caminho pelo caminho real do diretório onde os arquivos estão armazenados
-        String directoryPath = "C:/imagens/";
-
-        File directory = new File(directoryPath);
-        File[] files = directory.listFiles();
-
-        List<String> fileList = new ArrayList<>();
-
-        if (files != null) {
-            for (File file : files) {
-                if (file.isFile()) {
-                    fileList.add(file.getName());
-                }
-            }
-        }
-
-        model.addAttribute("fileList", fileList);
-
-        return "match"; // Nome do seu arquivo HTML que exibirá a lista de arquivos
-    }
 }
 

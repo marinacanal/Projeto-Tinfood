@@ -11,4 +11,4 @@ const reader = new FileReader();
         e.preventDefault();
         image.setAttribute('src', e.target.result)
        };
-     });
+});

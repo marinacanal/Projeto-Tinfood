@@ -33,7 +33,7 @@ public class UploadController {
 
         if (file.isEmpty()) {
             redirectAttributes.addFlashAttribute("message", "Por favor, selecione um arquivo para fazer upload.");
-            return "redirect:/";
+            return "";
         }
 
         try {

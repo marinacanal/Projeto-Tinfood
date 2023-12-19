@@ -28,24 +28,18 @@ public class SpringSecurity {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authorize) ->
-                        authorize.requestMatchers("/css/**", "/imagens/**", "/img/**", "/script/**").permitAll()
+                        authorize.requestMatchers("/css/**", "/imagens/**", "/img/**", "/fotos/**", "/script/**", "/resources/**").permitAll()
                                 .requestMatchers("/registrar/**").permitAll()
-                                .requestMatchers("/descricao/**").permitAll()
-                                .requestMatchers("/preferencia/**").permitAll()
-                                .requestMatchers("/match/**").permitAll()
-                                .requestMatchers("/matches/**").permitAll()
-                                .requestMatchers("/editar/**").permitAll()
-                                .requestMatchers("/categoria/**").permitAll()
+                                .requestMatchers("/fotoPerfil/**").hasRole("ADMIN")
+                                .requestMatchers("/descricao/**").hasRole("ADMIN")
+                                .requestMatchers("/preferencia/**").hasRole("ADMIN")
+                                .requestMatchers("/editar/**").hasRole("ADMIN")
                                 .requestMatchers("/").permitAll()
-                                .requestMatchers("/upload/**").permitAll()
-                                .requestMatchers("/download/**").permitAll()
-                                .requestMatchers("/uploadArquivo/**").permitAll()
-                                .requestMatchers("/downloadArquivo/**").permitAll()
-                                .requestMatchers("/chat").permitAll()
-                                .requestMatchers("/users/**").permitAll()
-                                .requestMatchers("/deletar/**").permitAll()
+                                .requestMatchers("/upload/**").hasRole("ADMIN")
+                                .requestMatchers("/uploadArquivo/**").hasRole("ADMIN")
+                                .requestMatchers("/downloadArquivo/**").hasRole("ADMIN")
+                                .requestMatchers("/deletar/**").hasRole("ADMIN")
                                 .requestMatchers("/api/**").permitAll()
-                                
                 ).formLogin(
                 form -> form
                         .loginPage("/login")

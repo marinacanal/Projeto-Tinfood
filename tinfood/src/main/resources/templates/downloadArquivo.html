@@ -1,18 +1,76 @@
-<!-- Página para fazer upload de arquivos -->
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Match</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styleDow.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<title>Matches</title>
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li><a href="/editar">Editar Conta</a></li>
-            <li><a href="/apagarConta">Apagar Conta</a></li>
-    </div>
-    <div id="listarUsers"></div>
-    <script src="/script/scriptMatch.js"></script>
+	<div class="container">
+		<div class="side">
+			<div class="header" id="listaUser"></div>
+			<div class="menu">
+				<ul>
+					<li>Matches</li>
+					<li class="active">Mensagens</li>
+				</ul>
+			</div>
+			<div class="messages">
+				<div class="avatar">
+					<img src="https://media.licdn.com/dms/image/D4D03AQHHGDK_lGvVxQ/profile-displayphoto-shrink_800_800/0/1688509236239?e=1707350400&v=beta&t=2mPUh6Y71Qgi6r6YEluLZD46wOX7Q-WPJlAO5uJBxq0" alt="" />
+				</div>
+				<div class="message">
+					<div class="user">Bruno</div>
+					<div class="text">sou lindo</div>
+				</div>
+			</div>
+			<div class="messages">
+				<div class="avatar">
+					<img src="https://media.licdn.com/dms/image/C4D03AQErwW39lijlqw/profile-displayphoto-shrink_800_800/0/1635509937341?e=1707350400&v=beta&t=OutqYfAKMhwXYbpOzBFwIwMR-wjajXsdDIT-wCrgHOw" alt="" />
+				</div>
+				<div class="message">
+					<div class="user">Marcos</div>
+					<div class="text">*oculos*</div>
+				</div>
+			</div>
+			<div class="messages">
+				<div class="avatar">
+					<img src="https://media.licdn.com/dms/image/D4D03AQFVOAtnKnIPQQ/profile-displayphoto-shrink_800_800/0/1681495216096?e=1707350400&v=beta&t=33ezxXGbudkQXOO60SMv5Ykt71cm4qoKT4qrfiuOc0Q" alt="" />
+				</div>
+				<div class="message">
+					<div class="user">Marina</div>
+					<div class="text">óculos 2</div>
+				</div>
+			</div>
+			<div class="messages">
+				<div class="avatar">
+					<img src="https://media.licdn.com/dms/image/D4D03AQEzBlQdzJTDEw/profile-displayphoto-shrink_800_800/0/1692380608299?e=1707350400&v=beta&t=fDvnRq-LFytOCVjmZhRs29waVW1Pv_aeXhtyMDYgdGQ" alt="" />
+				</div>
+				<div class="message">
+					<div class="user">Eduardo</div>
+					<div class="text">bigode e suspensório</div>
+				</div>
+			</div>
+			<div class="messages">
+				<div class="avatar">
+					<img src="https://media.licdn.com/dms/image/D5603AQGh1oUDuGBP6g/profile-displayphoto-shrink_800_800/0/1690243363593?e=1707350400&v=beta&t=xX3nCRn3wmIbIcumQd1dtS2g-MTaGVnSYx6_VdpyASU" alt="" />
+				</div>
+				<div class="message">
+					<div class="user">Luid</div>
+					<div class="text">Baita</div>
+				</div>
+			</div>
+		</div>
+		<div id="listarUsers"></div>
+	</div>
+	<script src="/script/scriptMatch.js"></script>
 </body>
+
 </html>
+
+<a href="/deletar"></a>
