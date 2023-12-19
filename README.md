@@ -6,6 +6,7 @@ Linguagens utilizadas: Java, JavaScript, HTML & CSS;
 Frameworks utilizados: Spring Boot e Bootstrap.
 
 
+
 ## Desenvolvimento
 
 Para dar vida a aplicação, organizamos um plano para desenvolvê-lo com a ajuda do site Trello. Nesse site, criamos cartões dizendo o que cada um iria fazer e o status (a fazer, em andamento, concluído) dessas atividades.
@@ -34,6 +35,7 @@ Tela para realizar os matches: Luís;
 Tela para excluir a conta: Lucas.
 
 
+
 ### Design Página Inicial
 
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/ba18ce7d-61e9-4495-8648-0989818e0488)
@@ -47,9 +49,11 @@ Tela para excluir a conta: Lucas.
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/2a1079eb-37a5-45bb-9939-8b7bc664123a)
 
 
+
 ### Tela de Cadastro 
 
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/6cd29ffe-96fd-4780-9082-67da0b5d418c)
+
 
 
 ### Tela de Login 
@@ -57,9 +61,11 @@ Tela para excluir a conta: Lucas.
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/7c230860-0ac9-4aa1-a481-f51531e678cb)
 
 
+
 ### Tela de Descrição 
 
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/7a01cdb5-1bf1-4662-bebc-3ef3ac4bccb4)
+
 
 
 ### Tela de Preferências
@@ -67,9 +73,11 @@ Tela para excluir a conta: Lucas.
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/f6d8213b-e497-49c7-a426-a746278b027f)
 
 
+
 ### Tela de Foto de Perfil
 
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/4443c9ee-1303-468d-928b-3db591ae2cf1)
+
 
 
 ### Tela de Matches
@@ -77,9 +85,11 @@ Tela para excluir a conta: Lucas.
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/bb6b5b52-d83d-478b-a068-63276edccd09)
 
 
+
 ### Tela de Editar Perfil
 
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/baf83fef-4369-486c-b803-a5918daf854c)
+
 
 
 ### Tela de Editar a Foto de Perfil
@@ -87,9 +97,10 @@ Tela para excluir a conta: Lucas.
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/3ff1a590-59a2-4393-bc1f-6216c6c32986)
 
 
+
 ### Tela Excluir Conta
 
-![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/05534262-57ed-4ae6-b5d1-f6ddca724891)
+![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/ef7b5e50-20d9-48c7-ace6-0aec18175dea)
 
 
 Esse projeto foi de extrema importância no meu processo de evolução como programadora.
