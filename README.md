@@ -3,7 +3,8 @@
 Através da análise da sociedade vigente, feita a partir de pesquisas, experiências individuais e observações de cada um dos integrantes do grupo que desenvolveu esse projeto, foi percebido um problema cada vez mais recorrente: a conexão entre pessoas. Essa questão se dá devido a diversos fatores, como por exemplo, a mudança no modo como as pessoas trabalham e como a sociedade passou a se relacionar entre si. Sendo assim, o grupo decidiu desenvolver um projeto que ajudasse a resolver o problema percebido, o “Tinfood”. O Tinfood é uma aplicação web que visa o desenvolvimento de relações (de amizade, principalmente) entre adultos com gostos culinários parecidos. Ou seja, se uma pessoa deseja conhecer um novo restaurante e não tem com quem ir, ela poderia utilizar o Tinfood para encontrar pessoas com interesse em comum e marcar de conhecer.
 
 Linguagens utilizadas: Java, JavaScript, HTML & CSS;
-Frameworks utilizados: Spring Boot e Bootstrap.
+Frameworks utilizados: Spring Boot e Bootstrap;
+Banco de dados: PostgreSQL.
 
 
 
