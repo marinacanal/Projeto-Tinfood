@@ -13,7 +13,7 @@ public class FileListController {
     @GetMapping("/downloadArquivo")
     public String listFile(Model model) {
         // Substitua este caminho pelo caminho real do diretório onde os arquivos estão armazenados
-        String directoryPath = "C:/imagens/";
+        String directoryPath = "../imagens/";
 
         File directory = new File(directoryPath);
         File[] files = directory.listFiles();

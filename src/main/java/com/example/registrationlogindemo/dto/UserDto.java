@@ -46,5 +46,4 @@ public class UserDto {
     private String preferencia3;
 
     private String foto_perfil;
-
 }

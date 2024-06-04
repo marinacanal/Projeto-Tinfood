@@ -25,5 +25,4 @@ public class PreferenciaController {
         userRepository.save(UsuarioLogadoController.getUsuarioLogado());
         return "redirect:/uploadArquivo";
     }
-
 }

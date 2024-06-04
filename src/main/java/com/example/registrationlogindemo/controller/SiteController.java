@@ -1,11 +1,5 @@
 package com.example.registrationlogindemo.controller;
 
-import com.example.registrationlogindemo.dto.UserDto;
-import com.example.registrationlogindemo.entity.User;
-import com.example.registrationlogindemo.service.UserService;
-
-import jakarta.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,11 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.example.registrationlogindemo.dto.UserDto;
+import com.example.registrationlogindemo.entity.User;
+import com.example.registrationlogindemo.service.UserService;
+
+import jakarta.validation.Valid;
+
 @Controller // só controller é redirecionamento de pagina html (rotas)
 public class SiteController {
 
     @Autowired
-    private UserService userService;
+    private final UserService userService;
 
     public SiteController(UserService userService) {
         this.userService = userService;
@@ -41,6 +41,7 @@ public class SiteController {
         return "registrar";
     }
 
+    @SuppressWarnings("null")
     @PostMapping("/registrar/save")
     public String registrar(@Valid @ModelAttribute("user") UserDto user,
             BindingResult result,
