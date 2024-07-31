@@ -2,46 +2,46 @@
 
 Através da análise da sociedade vigente, feita a partir de pesquisas, experiências individuais e observações de cada um dos integrantes do grupo que desenvolveu esse projeto, foi percebido um problema cada vez mais recorrente: a conexão entre pessoas. Essa questão se dá devido a diversos fatores, como por exemplo, a mudança no modo como as pessoas trabalham e como a sociedade passou a se relacionar entre si. Sendo assim, o grupo decidiu desenvolver um projeto que ajudasse a resolver o problema percebido, o “Tinfood”. O Tinfood é uma aplicação web que visa o desenvolvimento de relações (de amizade, principalmente) entre adultos com gostos culinários parecidos. Ou seja, se uma pessoa deseja conhecer um novo restaurante e não tem com quem ir, ela poderia utilizar o Tinfood para encontrar pessoas com interesse em comum e marcar de conhecer.
 
-Linguagens utilizadas: Java, JavaScript, HTML & CSS;
+### Linguagens utilizadas: 
+Java
 
-Frameworks utilizados: Spring Boot e Bootstrap;
+JavaScript
 
-Banco de dados: PostgreSQL.
+HTML 
 
+CSS
 
+### Frameworks utilizados: 
+Spring Boot 
 
+Bootstrap
+
+### Banco de dados: 
+PostgreSQL
 
 ## Desenvolvimento
 
 
 Para dar vida a aplicação, organizamos um plano para desenvolvê-lo com a ajuda do site Trello. Nesse site, criamos cartões dizendo o que cada um iria fazer e o status (a fazer, em andamento, concluído) dessas atividades.
 
-Os desenvolvedores deste projeto são cinco: eu (Marina), Luís, Lucas e Israel. 
+### Desenvolvedores: 
+Eu (Marina Canal), Luís Scalvi, Lucas Braguinni, e Israel Machado. 
 
-Design das telas prototipadas: Marina;
-Criação do documento: Marina;
-Suporte: Marina.
+### Papel de cada um:
+1 - Design das telas prototipadas, criação do documento: Marina
 
-Back-end e JS do Front-end: Marina e Luís, dividido da seguinte maneira:
-Cadastro e validação de login: Marina e Luís;
-Cadastrar informações adicionais à conta (descrição, preferências e foto de perfil): Marina e Luís;
-Listar os usuários na tela de match: Marina;
-Apagar a conta do usuário logado: Luís;
-Listar e editar as informações do usuário logado: Marina.
+2 - Tela para edição de cadastro e exclusão da conta: Marina
 
-HTML e CSS: Lucas e Israel, dividido em:
-Tela inicial: Israel;
-Tela de login: Israel;
-Tela de cadastro: Israel;
-Tela para configurar a foto de perfil: Lucas;
-Tela para configurar as preferências: Lucas;
-Tela para configurar a descrição: Lucas;
-Tela para realizar os matches: Luís;
-Tela para excluir a conta: Lucas.
+3 - CRUD back-end, conexão front com back (JavaScript), suporte quando necessário no front-end: Marina e Luís
+
+4- Tela para realizar os matches: Luís
+
+5 - Telas inicial, login, cadastro: Israel
+
+6 - Telas para configurar a foto de perfil, preferências, descrição: Lucas.
 
 
-
-### Design Página Inicial
+## Design Página Inicial
 
 
 ![image](https://github.com/marinacanal/Projeto-Tinfood/assets/121324624/5043ea21-a3e0-48ff-8302-dfa0e7925576)
